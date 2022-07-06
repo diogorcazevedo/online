@@ -24,7 +24,7 @@ class Collection extends Model
     {
         return new Attribute(
             get: fn ($value) => strtoupper($value),
-            set: fn ($value) => $value,
+            set: fn ($value) => strtoupper($value),
         );
     }
 
