@@ -11,14 +11,14 @@ export default function Edit({order}) {
     const { flash } = usePage().props
 
     const { data, setData, post, processing, errors } = useForm({
-        data: order.data ? moment(order.data).format('DD-MM-YYYY') : '',
+        data: order.data ? moment(order.data).format('DD-MM-YYYY'): '',
         status: order.status,
         notafiscal: order.notafiscal,
         parcelamento: order.parcelamento,
         pagamento: order.pagamento,
-        previsao: order.previsao ? moment(order.previsao).format('DD-MM-YYYY') : '',
+        previsao: order.previsao ? moment(order.previsao).format('DD-MM-YYYY'): '',
         canal: order.canal,
-        total: order.total,
+        total: order.total ? order.total : '',
     })
 
     function submit(e) {
