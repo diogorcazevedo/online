@@ -7,8 +7,6 @@ use Illuminate\Support\Facades\Storage;
 
 class ImageRepository
 {
-
-
     /**
      * @var Image
      */
