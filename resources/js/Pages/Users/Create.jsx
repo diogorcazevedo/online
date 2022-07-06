@@ -3,6 +3,7 @@ import React from 'react';
 import InputMask from 'react-input-mask';
 import axios from 'axios';
 import Auth from '@/Layouts/Auth';
+import FormSearchGeneric from "@/Components/Application/FormSearchGeneric";
 
   export default function Create({user,url}) {
 
@@ -27,7 +28,7 @@ import Auth from '@/Layouts/Auth';
 
     function submit(e) {
       e.preventDefault()
-      post(route('checkout.order'))
+      post(route('user.store'))
     }
 
 
@@ -65,13 +66,11 @@ const searchCep = (setData,e) =>{
         <Auth auth={auth} errors={errors} >
           <Head title="Users" />
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-16">
-                <table className="shadow-sm border mt-8 min-w-full divide-y divide-x divide-gray-200">
-                    <thead className="bg-white divide-y divide-x divide-gray-200">
-                    <tr>
-                        <td colSpan="3" className="text-left ml-4 pl-4">Clientes </td>
-                    </tr>
-                    </thead>
-                </table>
+                <div className="shadow mt-6 p-4 flex flex-row">
+                    <div className="basis-1/3">
+                        <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">Novo Cliente</h2>
+                    </div>
+                </div>
                 <form onSubmit={submit}>
                 <div className="max-w-2xl mx-auto px-4 lg:max-w-none lg:px-0">
 

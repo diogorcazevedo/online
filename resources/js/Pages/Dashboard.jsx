@@ -40,7 +40,7 @@ export default function Dashboard({total}) {
                                 <div className="flex items-baseline text-2xl font-semibold text-teal-600">
                                 <span className="ml-6 text-sm font-medium text-gray-500">
                                      <Link href={route('order.client')} className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-teal-700 bg-emerald-100 hover:bg-teal-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
-                                        Lançar Nova Venda
+                                        Lançar nova venda
                                      </Link>
                                 </span>
                                 </div>

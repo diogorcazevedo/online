@@ -64,8 +64,6 @@ Route::post('order/update/{order}',                               [OrderControll
 Route::get('order/links/{order}',                                 [OrderController::class, 'links'])->name('order.links')->middleware(['auth', 'verified']);
 Route::get('order/destroy/{order}',                               [OrderController::class, 'destroy'])->name('order.destroy')->middleware(['auth', 'verified']);
 
-
-
 Route::get('shipping/index/{order}',                               [ShippingController::class, 'index'])->name('shipping.index')->middleware(['auth', 'verified']);
 Route::get('shipping/get_all/{order}',                             [ShippingController::class, 'get_all'])->name('shipping.get_all')->middleware(['auth', 'verified']);
 Route::get('shipping/reverse/{order}',                             [ShippingController::class, 'reverse'])->name('shipping.reverse')->middleware(['auth', 'verified']);
