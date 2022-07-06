@@ -16,4 +16,3 @@ jobs:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.REMOTE_USER }}
           password: ${{ secrets.SSH_PASSWORD }}
-          remotePath: ${{ secrets.REMOTE_TARGET }}
