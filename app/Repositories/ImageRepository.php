@@ -17,7 +17,6 @@ class ImageRepository
         $this->image = $image;
     }
 
-
     public function destroy($id)
     {
         $image = Image::find($id);
