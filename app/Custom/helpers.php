@@ -1,6 +1,5 @@
 <?php
 
-
 function removerAcento($string) {
 
     // matriz de entrada

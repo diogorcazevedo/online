@@ -8,12 +8,11 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2
         with:
-          repository: diogorcazevedo/administracao-online
           token: ${{ secrets.PUSH_TOKEN }}
       - name: ssh deploy
         uses: Creepios/sftp-action@v1.0.3
         with:
-          host: ${{ secrets.REMOTE_HOST }}
-          username: ${{ secrets.REMOTE_USER }}
+          host: ${{ secrets.APP_HOST }}
+          username: ${{ secrets.APP_USER }}
           password: ${{ secrets.SSH_PASSWORD }}
           remotePath: ${{ secrets.REMOTE_TARGET }}
